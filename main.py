@@ -14,7 +14,7 @@ def getAbout():
 
 @app.route("/contact")
 def contact():
-  return render_template('contact.html', phone = 87654321)
+  return render_template('contact.html', phone = 29856246)
 
 
 if __name__ == '__main__':
