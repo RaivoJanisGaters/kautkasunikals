@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 
 app = Flask(__name__)
 
@@ -15,6 +15,11 @@ def getAbout():
 @app.route("/contact")
 def contact():
   return render_template('contact.html', phone = 29856246)
+
+
+@app.route('/params')
+def params():
+  return request.args
 
 
 if __name__ == '__main__':
